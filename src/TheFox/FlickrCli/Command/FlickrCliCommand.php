@@ -229,6 +229,7 @@ abstract class FlickrCliCommand extends Command
 
     private function setupConfig()
     {
+        $configFilePath = getenv('HOME').'/.flickr-cli/config.yml';
         $input = $this->getInput();
 
         if ($input->hasOption('config') && $input->getOption('config')) {
