@@ -89,7 +89,7 @@ class FilesCommand extends FlickrCliCommand
                     $id = (string)$photo->attributes()->id;
                     $fileCount++;
 
-                    printf('  %d/%d %s' . "\n", $page, $fileCount, $id);
+                    printf('  %d/%d %s %s' . "\n", $page, $fileCount, $id, (string)$photo->attributes()->title);
                 }
             }
         }
