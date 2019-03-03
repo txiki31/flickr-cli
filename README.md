@@ -23,7 +23,14 @@ First, get the access token:
 
 ### Upload
 
-	./bin/flickr-cli upload [-d DESCRIPTION] [-t TAG,...] [-s SET,...] DIRECTORY...
+	flickr-cli upload DIRECTORY
+	    Optional options :
+		-d DESCRIPTION  : description for all uloaded files (--description=...)
+		-t TAG,...      : tags sets to all uploaded files. For example: -t tag1,"Tag two" (--tags=...)
+		-s SET,...      : add uploaded files to sets (created if not exists). For example: -s "Set one",set2 (-sets=...)
+		-m DIRECTORY    : move uploaded files to this directory (--move=...)
+		-r              : Recurse into directories (--recurse)
+		--dry-run       : Show what would have been transferred
 
 ### Download
 
