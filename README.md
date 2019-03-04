@@ -31,6 +31,11 @@ First, get the access token:
 		-m DIRECTORY    : move uploaded files to this directory (--move=...)
 		-r              : Recurse into directories (--recurse)
 		--dry-run       : Show what would have been transferred
+		--dry-run       : Show what would have been transferred
+
+Upload prevents that images are not processed twice by storing status into an index located at the image dir (name _.uploaded.db_).
+
+*Flickr creates a file for each upload of the same image.* 
 
 ### Download
 

@@ -11,6 +11,6 @@ class FlickrCli
     const DOWNLOAD_PROGRESSBAR_ITEMS = 35;
     const DOWNLOAD_STREAM_READ_LEN = 4096;
     const CLEAR_CHAR = ' ';
-    const FILES_INORE = ['.', '..', '.DS_Store'];
+    const FILES_INORE = ['.', '..', '.DS_Store', '.uploaded.db'];
     const ACCEPTED_EXTENTIONS = ['jpg', 'jpeg', 'png', 'gif', 'mov', 'avi', 'mts', 'mp4'];
 }
